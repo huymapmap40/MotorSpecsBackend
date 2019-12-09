@@ -6,10 +6,10 @@ main = Blueprint('main', __name__)
 
 # @main.route('/')
 # def index():
-#     data = mongo.db.testabc.insert({'brand':'test532'})
+#     data = mongo.db.testabc.insert({'brand':'yaaaa_test532'})
 #     return jsonify({'result':"Success!"})
 
-@main.route('/', methods=['GET'])
+@main.route('/all', methods=['GET'])
 def get_all_manufacturer():
     manufacturer = mongo.db.manufacturer
     output = []

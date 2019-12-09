@@ -1,7 +1,6 @@
 from flask import Flask
 from .extensions import mongo
 from .main import main
-# from mongoengine_jsonencoder import MongoEngineJSONEncoder
 
 def create_app(config_object='manufacturer.settings'):
     app = Flask(__name__)
